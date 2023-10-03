@@ -1,0 +1,321 @@
+*{
+  box-sizing: border-box;
+}
+#wrap {
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  margin-top: 30px;
+
+}
+
+#right {
+  margin-top: 30px;
+  width: 100%;
+}
+
+#left {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.paragraph {
+  margin-top: 20px;
+  width: 500px;
+  font-size: 14px;
+}
+
+.heading2 {
+  font-size: 50px;
+  margin-top: 10px;
+  width: 500px;
+}
+
+.primary {
+  border: none;
+  width: 190px;
+  height: 60px;
+  background-color: #4198EE;
+  color: white;
+}
+
+.primary:hover {
+  border: solid #4198EE;
+  background-color: white;
+  color: black;
+}
+
+.secondary {
+  border: solid #4198EE;
+  width: 200px;
+  height: 60px;
+  background-color: transparent;
+
+}
+
+.secondary:hover {
+  border: solid #4198EE;
+  background-color: #4198EE;
+  color: white;
+
+}
+
+.btn {
+  margin-top: 50px;
+  padding: 0px;
+  display: flex;
+  width: 420px;
+  justify-content: space-between;
+}
+
+
+
+/*  OUR SERVICES */
+.down{
+  color: #4198EE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 50px;
+  padding: 10px;
+}
+.one {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.three {
+  font-size: 50px;
+}
+
+.btn1 {
+  display: inline-flex;
+  width: 250px;
+  justify-content: space-between;
+
+  padding-top: 10px;
+
+
+
+}
+
+.primary1 {
+  font-size: 16px;
+  border: none;
+  width: 120px;
+  height: 50px;
+  background-color: #4198EE;
+  color: white;
+
+
+}
+.primary1:hover {
+  border: solid #4198EE;
+  background-color: transparent;
+  color: black;
+}
+
+.secondary2 {
+  font-size: 16px;
+  border: solid #4198EE;
+  width: 120px;
+  height: 50px;
+  background-color: transparent;
+
+}
+.secondary2:hover {
+  border: solid #4198EE;
+  background-color: #4198EE;
+  color: white;
+
+}
+.color{
+  width: auto;
+  height: auto;
+  padding: 5%;
+
+}
+#box
+{
+  padding: 10px;
+}
+
+/*  WHY US */
+.why{
+  padding: 5%;
+  width: auto;
+  height: 1000px;
+  background-color: #edf5ff;
+}
+.ul1{
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #4198EE;
+}
+li{
+  list-style: none;
+  text-decoration: none;
+}
+
+#left2 {
+  margin-top: 57px;
+  margin-left: 40px;
+  width: 100%;
+}
+#wrap2{
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  margin-top: 0px;
+
+
+}
+
+
+
+/*  OUR TEAM */
+
+#box1{
+  padding: 0px;
+border : 5px solid #4198EE;
+
+}
+
+
+/* #box1:hover{
+  padding: 14px;
+border : 5px solid #4198EE;
+
+
+} */
+.box1{
+  
+  padding: 10px;
+  width: auto;
+  height: 100px;
+  background-color: #4198EE;
+  color: white;
+}
+
+
+.one1{
+  padding-top: 40px;
+  display: flex;
+  gap: 70px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*  FEEDBACK */
+
+
+
+
+
+
+.circular-image {
+  font-size: 200px;
+ /*  width: 200px; 
+  height: 200px; */
+  overflow: hidden; 
+  border-radius: 50%; 
+  margin: 0 auto; 
+  color: #4198EE;
+}
+.why1{
+
+  padding: 5%;
+  width: auto;
+  height: auto;
+  background-color: #edf5ff;
+}
+.client{
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+
+  width: 1000px;
+  height: auto;
+  border: solid #4198EE;
+  background-color: transparent;
+}
+.client p {
+  padding-top: 10px;
+
+}
+
+
+/*  FOOTER */
+
+/* Style for the main footer container */
+.footer {
+  width: auto;
+  height: 200px;
+  background-color:#4198EE;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Style for the content within the footer */
+.footer-content {
+
+padding-left: 30px;
+padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+/* Style for the footer logo */
+.footer-logo h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Style for the footer links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: white;
+
+
+  text-decoration: none;
+}
+
+/* Style for the footer contact information */
+.footer-contact p {
+  margin: 5px 0;
+}
+
+/* Style for the footer bottom section */
+.footer-bottom {
+  color: white;
+
+
+  padding: 10px 0;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
