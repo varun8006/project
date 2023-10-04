@@ -18,7 +18,7 @@ function Login() {
       navigate("/Oeadmin")
     }
     else if (name === "cm" && pwd === "cm") {
-      alert(<div class="alert alert-success" role="alert">
+      alert(<div className="alert alert-success" role="alert">
         login successfully to admin pannal
       </div>)
       navigate("/Cmadmin")
@@ -52,7 +52,7 @@ function Login() {
               value={pwd} onChange={e => setPwd(e.target.value)} />
  </div>
 
-            <button type='signup' value='SIGNUP' onClick={islogin} class="primary offset-4">Login</button>
+            <button type='signup' value='SIGNUP' onClick={islogin} className="primary offset-4">Login</button>
 
           </form>
 

@@ -22,7 +22,7 @@ const Enquirylist = () => {
         <div className="card">
         <h5 className="card-header text-center">Enquiry List</h5>
 
-          <table class="table  table-hover">
+          <table className="table  table-hover">
             <thead>
               <tr>
                 <th scope="col">id</th>
@@ -49,9 +49,9 @@ const Enquirylist = () => {
                       <td>{obj.uidnumber}</td>
                       <td>{obj.pannumber}</td>
 
-                      <td><NavLink to={`/admin/regional/update/${obj.id}`}><button type="button" class="primary1"><GrDocumentUpdate/></button></NavLink></td>
+                      <td><NavLink to={`/admin/regional/update/${obj.id}`}><button type="button" className="primary1"><GrDocumentUpdate/></button></NavLink></td>
                       
-                      <td><NavLink to={`/admin/regional/delete/${obj.id}`}><button type="button" class="secondary2"><AiOutlineDelete/></button></NavLink></td>
+                      <td><NavLink to={`/admin/regional/delete/${obj.id}`}><button type="button" className="secondary2"><AiOutlineDelete/></button></NavLink></td>
                     </tr>
 
                   )

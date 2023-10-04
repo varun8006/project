@@ -10,46 +10,46 @@ const Uplodedocument = () => {
         <div className="card-body">
           <form >
             <div>
-              <div class="input-group mb-3">
-                <label htmlFor="firstname" class="col-sm-12 col-form-label">Passport Photo</label>
-                <input type="file" class="form-control" id="inputGroupFile02" />
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+              <div className="input-group mb-3">
+                <label htmlFor="firstname" className="col-sm-12 col-form-label">Passport Photo</label>
+                <input type="file" className="form-control" id="inputGroupFile02" />
+                <label className="input-group-text" for="inputGroupFile02">Upload</label>
 
 
-                <label htmlFor="firstname" class="col-sm-12 col-form-label">Passport Photo</label>
-                <input type="file" class="form-control" id="inputGroupFile02" />
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                <label htmlFor="firstname" className="col-sm-12 col-form-label">Passport Photo</label>
+                <input type="file" className="form-control" id="inputGroupFile02" />
+                <label className="input-group-text" for="inputGroupFile02">Upload</label>
 
 
 
-                <label htmlFor="firstname" class="col-sm-12 col-form-label">Passport Photo</label>
-                <input type="file" class="form-control" id="inputGroupFile02" />
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                <label htmlFor="firstname" className="col-sm-12 col-form-label">Passport Photo</label>
+                <input type="file" className="form-control" id="inputGroupFile02" />
+                <label className="input-group-text" for="inputGroupFile02">Upload</label>
 
 
-                <label htmlFor="firstname" class="col-sm-12 col-form-label">Voter ID Card</label>
-                <input type="file" class="form-control" id="inputGroupFile02" />
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                <label htmlFor="firstname" className="col-sm-12 col-form-label">Voter ID Card</label>
+                <input type="file" className="form-control" id="inputGroupFile02" />
+                <label className="input-group-text" for="inputGroupFile02">Upload</label>
 
 
-                <label htmlFor="firstname" class="col-sm-12 col-form-label">Driving License</label>
-                <input type="file" class="form-control" id="inputGroupFile02" />
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                <label htmlFor="firstname" className="col-sm-12 col-form-label">Driving License</label>
+                <input type="file" className="form-control" id="inputGroupFile02" />
+                <label className="input-group-text" for="inputGroupFile02">Upload</label>
 
 
-                <label htmlFor="firstname" class="col-sm-12 col-form-label">Aadhaar Card</label>
-                <input type="file" class="form-control" id="inputGroupFile02" />
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                <label htmlFor="firstname" className="col-sm-12 col-form-label">Aadhaar Card</label>
+                <input type="file" className="form-control" id="inputGroupFile02" />
+                <label className="input-group-text" for="inputGroupFile02">Upload</label>
 
 
-                <label htmlFor="firstname" class="col-sm-12 col-form-label">Bank Statement</label>
-                <input type="file" class="form-control" id="inputGroupFile02" />
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                <label htmlFor="firstname" className="col-sm-12 col-form-label">Bank Statement</label>
+                <input type="file" className="form-control" id="inputGroupFile02" />
+                <label className="input-group-text" for="inputGroupFile02">Upload</label>
 
 
-                <label htmlFor="firstname" class="col-sm-12 col-form-label">Salary Slip</label>
-                <input type="file" class="form-control" id="inputGroupFile02" />
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                <label htmlFor="firstname" className="col-sm-12 col-form-label">Salary Slip</label>
+                <input type="file" className="form-control" id="inputGroupFile02" />
+                <label className="input-group-text" for="inputGroupFile02">Upload</label>
 
 
 
@@ -57,10 +57,10 @@ const Uplodedocument = () => {
               </div>
               <div className='btn offset-4'>
                 <div>
-                  <button type="submit" class="primary">Uplode Now</button>
+                  <button type="submit" className="primary">Uplode Now</button>
                 </div>
                 <div>
-                  <button type="reset" class="secondary">Reset </button>
+                  <button type="reset" className="secondary">Reset </button>
                 </div>
               </div>
             </div>

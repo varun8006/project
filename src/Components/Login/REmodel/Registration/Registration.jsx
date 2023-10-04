@@ -10,34 +10,34 @@ import Regional from '../Regional'
         <div className="card-body">
         <form >
             <div>
-              <div class="col-12">
-                <label htmlFor="firstname" class="col-sm-12 col-form-label">First Name</label>
-                <input type="text" name='firstname' class="form-control" id="firstname" />
+              <div className="col-12">
+                <label htmlFor="firstname" className="col-sm-12 col-form-label">First Name</label>
+                <input type="text" name='firstname' className="form-control" id="firstname" />
 
-                <label htmlFor="lastname" class="col-sm-12 col-form-label">Last Name</label>
-                <input type="text" name='lasttname' class="form-control" id="lastname"  />
-
-
-                <label htmlFor="email" class="col-sm-12 col-form-label">Email Address</label>
-                <input type="email" name='email' class="form-control" id="email" />
-
-                <label htmlFor="dateofbirth" class="col-sm-12 col-form-label">Date of Birth</label>
-                <input type="text" name='dateofbirth' class="form-control" id="dateofbirth"  /> 
+                <label htmlFor="lastname" className="col-sm-12 col-form-label">Last Name</label>
+                <input type="text" name='lasttname' className="form-control" id="lastname"  />
 
 
-                <label htmlFor="uidnumber" class="col-sm-12 col-form-label">Aadhar Number</label>
-                <input type="number" name='uidnumber' class="form-control" id="uidnumber" />
+                <label htmlFor="email" className="col-sm-12 col-form-label">Email Address</label>
+                <input type="email" name='email' className="form-control" id="email" />
 
-                <label htmlFor="pannumber" class="col-sm-12 col-form-label">Pan Card Number</label>
-                <input type="number" name='pannumber' class="form-control" id="pannumber" />
+                <label htmlFor="dateofbirth" className="col-sm-12 col-form-label">Date of Birth</label>
+                <input type="text" name='dateofbirth' className="form-control" id="dateofbirth"  /> 
+
+
+                <label htmlFor="uidnumber" className="col-sm-12 col-form-label">Aadhar Number</label>
+                <input type="number" name='uidnumber' className="form-control" id="uidnumber" />
+
+                <label htmlFor="pannumber" className="col-sm-12 col-form-label">Pan Card Number</label>
+                <input type="number" name='pannumber' className="form-control" id="pannumber" />
 
                 
                 <div className='btn offset-4'>
             <div>
-              <button type="submit" class="primary">Submit Now</button>
+              <button type="submit" className="primary">Submit Now</button>
             </div>
             <div>
-              <button type="reset" class="secondary">Reset </button>
+              <button type="reset" className="secondary">Reset </button>
             </div>
           </div>
 

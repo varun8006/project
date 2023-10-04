@@ -1,6 +1,10 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
+import Footer from './footer'
+
+
 import './Home.css'
+
 import img from '../Asset/Home/car.png'
 import img2 from '../Asset/Home/suv.jpg'
 import img3 from '../Asset/Home/Hatchback.jpg'
@@ -38,10 +42,10 @@ const Home = () => {
           </p>
           <div className='btn'>
             <div>
-              <button type="submit" class="primary">Book Now</button>
+              <button type="submit" className="primary">Book Now</button>
             </div>
             <div>
-              <button type="reset" class="secondary">View </button>
+              <button type="reset" className="secondary">View </button>
             </div>
           </div>
         </div>
@@ -68,8 +72,8 @@ const Home = () => {
             <div>SUV Car loan</div>
             <hr></hr>
             <div className='btn1'>
-              <button type="submit" class="primary1">Book Now</button>
-              <button type="reset" class="secondary2">View </button>
+              <button type="submit" className="primary1">Book Now</button>
+              <button type="reset" className="secondary2">View </button>
             </div>
           </div>
 
@@ -79,8 +83,8 @@ const Home = () => {
             <hr></hr>
 
             <div className='btn1'>
-              <button type="submit" class="primary1">Book Now</button>
-              <button type="reset" class="secondary2">View </button>
+              <button type="submit" className="primary1">Book Now</button>
+              <button type="reset" className="secondary2">View </button>
             </div>
           </div>
 
@@ -90,8 +94,8 @@ const Home = () => {
             <hr></hr>
 
             <div className='btn1'>
-              <button type="submit" class="primary1">Book Now</button>
-              <button type="reset" class="secondary2">View </button>
+              <button type="submit" className="primary1">Book Now</button>
+              <button type="reset" className="secondary2">View </button>
             </div>
           </div>
 
@@ -101,8 +105,8 @@ const Home = () => {
             <hr></hr>
 
             <div className='btn1'>
-              <button type="submit" class="primary1">Book Now</button>
-              <button type="reset" class="secondary2">View </button>
+              <button type="submit" className="primary1">Book Now</button>
+              <button type="reset" className="secondary2">View </button>
             </div>
           </div>
 
@@ -114,8 +118,8 @@ const Home = () => {
             <div>SUV Car loan</div>
             <hr></hr>
             <div className='btn1'>
-              <button type="submit" class="primary1">Book Now</button>
-              <button type="reset" class="secondary2">View </button>
+              <button type="submit" className="primary1">Book Now</button>
+              <button type="reset" className="secondary2">View </button>
             </div>
           </div>
 
@@ -125,8 +129,8 @@ const Home = () => {
             <hr></hr>
 
             <div className='btn1'>
-              <button type="submit" class="primary1">Book Now</button>
-              <button type="reset" class="secondary2">View </button>
+              <button type="submit" className="primary1">Book Now</button>
+              <button type="reset" className="secondary2">View </button>
             </div>
           </div>
 
@@ -136,8 +140,8 @@ const Home = () => {
             <hr></hr>
 
             <div className='btn1'>
-              <button type="submit" class="primary1">Book Now</button>
-              <button type="reset" class="secondary2">View </button>
+              <button type="submit" className="primary1">Book Now</button>
+              <button type="reset" className="secondary2">View </button>
             </div>
           </div>
 
@@ -271,28 +275,7 @@ const Home = () => {
 
  {/*  FOOTER */}
 
-      <footer className="footer">
-      <div className="footer-content">
-        <div className="footer-logo">
-
-          <h2>Car Loan</h2>
-        </div>
-        <div className="footer-links">
-
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/blogs">Blog</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-          </ul>
-        </div>
-        
-      </div>
-      <div className="footer-bottom">
-
-        <p>&copy; 2023 CarLoan. All rights reserved.</p>
-      </div>
-    </footer>
+  <Footer/>
 
 
 

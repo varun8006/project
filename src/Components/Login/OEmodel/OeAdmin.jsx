@@ -10,11 +10,11 @@ const Admin = () => {
       <div>
         <div className='content'>
           <Operational />
-          <div class="card text-center">
-            <h5 class="card-header">Wellcome</h5>
-            <div class="card-body">
-              <h5 class="card-title">Thank You Operational Executive !</h5>
-              <p class="card-text">Your Login has been successfully Done. We will Fetch your data very soon!
+          <div className="card text-center">
+            <h5 className="card-header">Wellcome</h5>
+            <div className="card-body">
+              <h5 className="card-title">Thank You Operational Executive !</h5>
+              <p className="card-text">Your Login has been successfully Done. We will Fetch your data very soon!
                 <br>
                 </br>
                 [Car Loan]</p>

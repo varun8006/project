@@ -22,7 +22,7 @@ const Oeenquirylist = () => {
         
         <h5 className="card-header text-center">Enquiry List</h5>
 
-          <table class="table  table-hover">
+          <table className="table  table-hover">
             <thead>
               <tr>
                 <th scope="col">id</th>

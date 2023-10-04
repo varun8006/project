@@ -18,7 +18,7 @@ const Delete = () => {
     }
     useEffect(() => {
         fetchuser()
-    }, [])
+    },[])
 
     function deleteuser() {
         axios.delete(`http://localhost:8080/user/delete/${userId}`);
@@ -41,7 +41,7 @@ const Delete = () => {
           
 
           <NavLink to="/admin/regional/enquirylist">
-            <button type="reset" class="secondary mt-4  mb-4 offset-2 col-4">Cancel</button>
+            <button type="reset" className="secondary mt-4  mb-4 offset-2 col-4">Cancel</button>
           </NavLink>
 
         </div>
@@ -59,15 +59,4 @@ export default Delete
 
 
 
- {/* <div className='container text-center mt-5'>
-            <form onSubmit={() => deleteuser()}>
-                <h3>Do you Want to Delete Data
-                    {user.name}
-                </h3>
-
-                <input type='submit' className='btn btn-danger' value="YES" />
-
-                <NavLink to="/admin/regional/enquirylist"><button type='button' className="btn btn-warning"> NO, Cancel It</button>
-                </NavLink>
-            </form>
-        </div> */}
+ 

@@ -1,4 +1,6 @@
 import React from 'react'
+import Footer from './footer'
+
 
 import img2 from '../Asset/blog/2.jpg'
 import img3 from '../Asset/blog/3.jpg'
@@ -23,67 +25,73 @@ import Navbar from '../Navbar/Navbar'
 
 const Blogs = () => {
   return (
-    <div  class="row justify-content-evenly">
+    <>
+     <div  className="row justify-content-evenly">
       <Navbar/>
-      <div class="container text-left">
-        <div class="row align-items-end">
+      <div className="container text-left">
+        <div className="row align-items-end">
 
-          <div class="col-3">
-            <img src={img2} class="d-block w-100" alt="img" />
+          <div className="col-3">
+            <img src={img2} className="d-block w-100" alt="img" />
             
             
           </div>
-          <div class="col-3">
-            <img src={img3} class="d-block w-100" alt="img" />
+          <div className="col-3">
+            <img src={img3} className="d-block w-100" alt="img" />
           </div>
-          <div class="col-3">
-            <img src={img4} class="d-block w-100" alt="img" />
-          </div>
-
-          <div class="col-3">
-            <img src={img6} class="d-block w-100" alt="img" />
-          </div>
-          <div class="col-3">
-            <img src={img7} class="d-block w-100" alt="img" />
-          </div>
-          <div class="col-3">
-            <img src={img9} class="d-block w-100" alt="img" />
+          <div className="col-3">
+            <img src={img4} className="d-block w-100" alt="img" />
           </div>
 
-          <div class="col-3">
-            <img src={img13} class="d-block w-100" alt="img" />
+          <div className="col-3">
+            <img src={img6} className="d-block w-100" alt="img" />
           </div>
-          <div class="col-3">
-            <img src={img15} class="d-block w-100" alt="img" />
+          <div className="col-3">
+            <img src={img7} className="d-block w-100" alt="img" />
           </div>
-          <div class="col-3">
-            <img src={img16} class="d-block w-100" alt="img" />
+          <div className="col-3">
+            <img src={img9} className="d-block w-100" alt="img" />
           </div>
-          <div class="col-3">
-            <img src={img17} class="d-block w-100" alt="img" />
+
+          <div className="col-3">
+            <img src={img13} className="d-block w-100" alt="img" />
           </div>
-          <div class="col-3">
-            <img src={img18} class="d-block w-100" alt="img" />
+          <div className="col-3">
+            <img src={img15} className="d-block w-100" alt="img" />
           </div>
-          <div class="col-3">
-            <img src={img19} class="d-block w-100" alt="img" />
+          <div className="col-3">
+            <img src={img16} className="d-block w-100" alt="img" />
           </div>
-          <div class="col-3">
-            <img src={img20} class="d-block w-100" alt="img" />
+          <div className="col-3">
+            <img src={img17} className="d-block w-100" alt="img" />
           </div>
-          <div class="col-3">
-            <img src={img13} class="d-block w-100" alt="img" />
+          <div className="col-3">
+            <img src={img18} className="d-block w-100" alt="img" />
           </div>
-          <div class="col-3">
-            <img src={img15} class="d-block w-100" alt="img" />
+          <div className="col-3">
+            <img src={img19} className="d-block w-100" alt="img" />
           </div>
-          <div class="col-3">
-            <img src={img16} class="d-block w-100" alt="img" />
+          <div className="col-3">
+            <img src={img20} className="d-block w-100" alt="img" />
+          </div>
+          <div className="col-3">
+            <img src={img13} className="d-block w-100" alt="img" />
+          </div>
+          <div className="col-3">
+            <img src={img15} className="d-block w-100" alt="img" />
+          </div>
+          <div className="col-3">
+            <img src={img16} className="d-block w-100" alt="img" />
           </div>
 
         </div>
       </div>
     </div>
+    <div>
+      <Footer/>
+    </div>
+    </>
+   
   )
 }
 

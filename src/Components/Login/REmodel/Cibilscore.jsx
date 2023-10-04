@@ -27,7 +27,7 @@ const Cibilscore = () => {
         <div className="card">
           <h5 className="card-header text-center">Enquiry List</h5>
 
-          <table class="table  table-hover">
+          <table className="table  table-hover">
             <thead>
               <tr>
                 <th scope="col">id</th>
@@ -52,11 +52,11 @@ const Cibilscore = () => {
                         <td>{obj.remark}</td>
                         <td>{obj.cibilescoredate}</td>
                         
-                        <td><NavLink to={`/readmin/registration`}><button type="button" class="secondary2"><SiGoogleforms/></button></NavLink></td>
+                        <td><NavLink to={`/readmin/registration`}><button type="button" className="secondary2"><SiGoogleforms/></button></NavLink></td>
 
-                        <td><NavLink to={`/readmin/uplodedocument`}><button type="button" class="secondary2"><GrDownload/></button></NavLink></td>
+                        <td><NavLink to={`/readmin/uplodedocument`}><button type="button" className="secondary2"><GrDownload/></button></NavLink></td>
                         
-                        <td><NavLink to={`/admin/regional/delete/`}><button type="button" class="secondary2"><AiOutlineDelete/></button></NavLink></td>
+                        <td><NavLink to={`/admin/regional/delete/`}><button type="button" className="secondary2"><AiOutlineDelete/></button></NavLink></td>
                       </tr>
   
                     )

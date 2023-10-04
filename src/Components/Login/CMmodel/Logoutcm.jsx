@@ -13,11 +13,11 @@ const Logoutcm = () => {
           <h5 className="card-title text-center">Are You sure You want to logout.</h5>
 
          <NavLink to="/login">
-          <button type="submit" class="primary offset-3 col-4">Logout</button>
+          <button type="submit" className="primary offset-3 col-4">Logout</button>
           </NavLink>
 
           <NavLink to="/Oeadmin">
-            <button type="reset" class="secondary mt-4  mb-4 offset-2 col-4">Cancel</button>
+            <button type="reset" className="secondary mt-4  mb-4 offset-2 col-4">Cancel</button>
           </NavLink>
 
 

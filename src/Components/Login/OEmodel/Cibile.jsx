@@ -21,19 +21,19 @@ const Cibile = () => {
         <h5 className="card-header text-center">Cibil Score</h5>
         <div className="card-body">
           <form onSubmit={handleSubmit(savedata)}>
-            <div class="col-12">
+            <div className="col-12">
 
-              <label for="id" class="col-sm-12 col-form-label">Enquiry Id</label>
-              <input type="number" name='id' class="form-control" id="id" {...register("id")}/>
+              <label for="id" className="col-sm-12 col-form-label">Enquiry Id</label>
+              <input type="number" name='id' className="form-control" id="id" {...register("id")}/>
 
-              <label for="cibilescore" class="col-sm-12 col-form-label">Cibile Score</label>
-              <input type="number" name='cibilescore' class="form-control" id="cibilescore" {...register("cibilescore")}/>
+              <label for="cibilescore" className="col-sm-12 col-form-label">Cibile Score</label>
+              <input type="number" name='cibilescore' className="form-control" id="cibilescore" {...register("cibilescore")}/>
 
               
-              <label for="cibilescoredate" class="col-sm-12 col-form-label">Cibile Score date</label>
-              <input type="text" name='cibilescoredate' class="form-control" id="cibilescoredate" {...register("cibilescoredate")} />
+              <label for="cibilescoredate" className="col-sm-12 col-form-label">Cibile Score date</label>
+              <input type="text" name='cibilescoredate' className="form-control" id="cibilescoredate" {...register("cibilescoredate")} />
 
-              <label htmlFor="status" class="col-sm-12 form-label" >Status</label>
+              <label htmlFor="status" className="col-sm-12 form-label" >Status</label>
               <select id="status" className="form-select"{...register("status")} >
 
                 <option selected value="">Open this select menu</option>
@@ -45,11 +45,11 @@ const Cibile = () => {
               </select>
 
 
-              <label for="remark" class="col-sm-12 col-form-label">Remark</label>
-              <textarea class="form-control" id="remark" name='remark'rows="4"{...register("remark")} ></textarea>
+              <label for="remark" className="col-sm-12 col-form-label">Remark</label>
+              <textarea className="form-control" id="remark" name='remark'rows="4"{...register("remark")} ></textarea>
 
-              <button type="submit" class="primary offset-3">Submit</button>
-              <button type="reset" class="secondary mt-4  mb-2 offset-2">Reset</button>
+              <button type="submit" className="primary offset-3">Submit</button>
+              <button type="reset" className="secondary mt-4  mb-2 offset-2">Reset</button>
 
             </div>
           </form>
