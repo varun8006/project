@@ -26,7 +26,7 @@ const Update = () => {
   }
   function savedata(data) {
     axios.put(`http://localhost:8080/user/update/${userId}`, data)
-    navigate(`/admin/regional/enquirylist`)
+    navigate(`/readmin/regional/enquirylist`)
   }
   useEffect(() => {
     fetchuser()

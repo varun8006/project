@@ -3,7 +3,7 @@ import Cradit from './Cradit'
 import { NavLink } from 'react-router-dom'
 
 
-const Logoutcm = () => {
+const Cmlogout = () => {
   return (
     <div className='content'>
       <Cradit/>
@@ -31,4 +31,4 @@ const Logoutcm = () => {
   )
 }
 
-export default Logoutcm
+export default Cmlogout

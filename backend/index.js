@@ -90,27 +90,26 @@ app.put("/user/update/:id", (req, res) => {
     return res.json(data)
   })
 })
-  
- app.delete("/user/delete/:id",(req,res)=>{
-  const userid=req.params.id;
-  const q = "delete from userdata WHERE id=?" 
 
-  connection.query(q,[userid],(error,data)=>{
+app.delete("/user/delete/:id", (req, res) => {
+  const userid = req.params.id;
+  const q = "delete from userdata WHERE id=?"
+
+  connection.query(q, [userid], (error, data) => {
     if (error) {
       console.log(error)
       return res.status(500).send(error)
-    } 
+    }
     return res.json(data)
 
   })
-}) 
+})
 
 
-/* cibile */
+/*  OE cibile  */
 
-
-app.get("/cibile", (req, res) => {
-  const q = "SELECT * FROM cibile"
+app.get("/cibil", (req, res) => {
+  const q = "SELECT * FROM cibil"
 
   connection.query(q, (error, data) => {
     if (error) {
@@ -121,13 +120,13 @@ app.get("/cibile", (req, res) => {
   })
 })
 
-app.post("/cibile", (req, res) => {
-  const q = "insert into `project`.`cibile` (`id`,`cibilescore`,`cibilescoredate`,`status`,`remark`)values (?,?,?,?,?)"
+app.post("/cibil", (req, res) => {
+  const q = "insert into `project`.`cibil` (`id`,`cibilscore`,`cibilscoredate`,`status`,`remark`)values (?,?,?,?,?)"
 
   const values = [
     req.body.id,
-    req.body.cibilescore,
-    req.body.cibilescoredate,
+    req.body.cibilscore,
+    req.body.cibilscoredate,
     req.body.status,
     req.body.remark
   ]
@@ -140,7 +139,34 @@ app.post("/cibile", (req, res) => {
   })
 })
 
+app.get("/cibil/:id", (req, res) => {
+  const userid = req.params.id;
+  const q = "SELECT * FROM cibil where id= ?"
 
+  connection.query(q, [userid], (error, data) => {
+
+    if (error) {
+      console.log(error)
+      return res.status(500).send({ error: "fetch error" })
+    }
+    return res.json(data)
+
+  })
+})
+
+app.delete("/cibil/delete/:id", (req, res) => {
+  const userid = req.params.id;
+  const q = "delete from cibil WHERE id=?"
+
+  connection.query(q, [userid], (error, data) => {
+    if (error) {
+      console.log(error)
+      return res.status(500).send(error)
+    }
+    return res.json(data)
+
+  })
+})
 
 
 app.listen(8080, () => {

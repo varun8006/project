@@ -3,7 +3,7 @@ import Operational from './Operational'
 import { NavLink } from 'react-router-dom'
 
 
-const Logoutoe = () => {
+const Oelogout = () => {
   return (
     <div className='content'>
       <Operational />
@@ -31,4 +31,4 @@ const Logoutoe = () => {
   )
 }
 
-export default Logoutoe
+export default Oelogout

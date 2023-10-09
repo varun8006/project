@@ -16,7 +16,7 @@ const Logout = () => {
           <button type="submit" className="primary offset-3">Logout</button>
           </NavLink>
 
-          <NavLink to="/admin">
+          <NavLink to="/readmin">
             <button type="reset" className="secondary offset-2">Cancel</button>
           </NavLink>
 

@@ -50,7 +50,8 @@ const Oeenquirylist = () => {
                       <td>{obj.dateofbirth}</td>
                       <td>{obj.uidnumber}</td>
                       <td>{obj.pannumber}</td>
-                      <td><NavLink to="/Oeadmin/Cibile"><button  type='submit'className='primary'> Cibile </button></NavLink> </td>
+
+                      <td><NavLink to="/oeadmin/oecibil"><button  type='submit'className='primary'> Cibile </button></NavLink> </td>
                     </tr>
 
                   )

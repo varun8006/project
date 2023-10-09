@@ -29,7 +29,7 @@ const Cradit = () => {
             Enquiry List</NavLink>
         </div>
         <div className='d-inline'>
-          <NavLink className="admin" to="/cmadmin/logoutcm">
+          <NavLink className="admin" to="/cmadmin/cmlogout">
             <div className='d-inline p-2' id='icon'>
               <FiLogOut />
             </div>

@@ -6,7 +6,7 @@ import Regional from './Regional'
 
 
 
-const User = () => {
+const Enquiry = () => {
 
 
   function savedata(data) {
@@ -89,4 +89,4 @@ const User = () => {
   )
 }
 
-export default User
+export default Enquiry

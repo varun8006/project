@@ -1,23 +1,24 @@
 import React from 'react'
-import Cradit from '../CMmodel/Cradit'
+import Regional from './Regional'
 
-import './Cm.css'
+import './Re.css'
 
-const CmAdmin = () => {
+const Readmin = () => {
   return (
     <div>
-      
+      <Regional />
       <div>
         <div className='content'>
-          <Cradit />
+          <Regional />
           <div className="card text-center">
-            <h5 className="card-header">Wellcome Cradit Manager</h5>
+            <h5 className="card-header">Regional Executive</h5>
             <div className="card-body">
-              <h5 className="card-title">Thank You Cradit Manager !</h5>
+              <h5 className="card-title">Thank You !</h5>
               <p className="card-text">Your Login has been successfully Done. We will Fetch your data very soon!
                 <br>
                 </br>
                 [Car Loan]</p>
+
             </div>
           </div>
         </div>
@@ -26,4 +27,4 @@ const CmAdmin = () => {
   )
 }
 
-export default CmAdmin
+export default Readmin

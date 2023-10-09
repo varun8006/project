@@ -3,21 +3,30 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.min.js"
 
-//Page
+
+//Home Page
 import Home from "./Components/Pages/Home"
 import About from "./Components/Pages/About"
 import Blogs from "./Components/Pages/Blogs"
 import Contact from "./Components/Pages/Contact"
 import Login from "./Components/Pages/Login";
 
-//RE
+//RE 
+import Readmin from "./Components/Login/REmodel/Readmin";
 import Cibilscore from "./Components/Login/REmodel/Cibilscore";
 import Enquiry from "./Components/Login/REmodel/Enquiry";
 import Enquirylist from "./Components/Login/REmodel/Enquirylist";
 import Logout from "./Components/Login/REmodel/Logout";
-import Admin from "./Components/Login/REmodel/Admin";
 import Delete from "./Components/Login/REmodel/Delete";
 import Update from "./Components/Login/REmodel/Update";
+
+//RE Delete
+import Cibild from "./Components/Login/REmodel/Cibildelete/Cibild";
+
+//RE Registration
+import Registration from "./Components/Login/REmodel/Registration/Registration";
+
+
 
 
 
@@ -25,28 +34,16 @@ import Update from "./Components/Login/REmodel/Update";
 import OeAdmin from './Components/Login/OEmodel/OeAdmin'
 import Operational from './Components/Login/OEmodel/Operational'
 import Oeenquirylist from './Components/Login/OEmodel/Oeenquirylist'
-import Logoutoe from './Components/Login/OEmodel/Logoutoe'
-import Cibile from './Components/Login/OEmodel/Cibile'
+import Oelogout from './Components/Login/OEmodel/Oelogout'
+import Oecibil from "./Components/Login/OEmodel/Oecibil";
 
-//OE
+
+
+
+//CM
 import Cmadmin from './Components/Login/CMmodel/CmAdmin'
 import Cmenquirylist from './Components/Login/CMmodel/Cmenquirylist'
-import Logoutcm from './Components/Login/CMmodel/Logoutcm'
-
-
-          // Registration 
-
-          
-           
-import Registration from "./Components/Login/REmodel/Registration/Registration";
-
-
-          // Uplodedocument 
-
-          import Uplodedocument from "./Components/Login/REmodel/Uplodedocument/Uplodedocument";
-
-
-
+import Cmlogout from './Components/Login/CMmodel/Cmlogout'
 
 
 
@@ -65,39 +62,39 @@ function App() {
 
 
           {/* RE */}
-          <Route path="/admin" element={<Admin />}></Route>
-          <Route path="/admin/regional/enquiry" element={<Enquiry />}></Route>
-          <Route path="/admin/regional/enquirylist" element={<Enquirylist />}></Route>
-          <Route path="/admin/regional/cibilscore" element={<Cibilscore />}></Route>
-          <Route path="/admin/regional/logout" element={<Logout />}></Route>
-          <Route path="/admin/regional/delete/:userId" element={<Delete />}></Route>
-          <Route path="/admin/regional/update/:userId" element={<Update />}></Route>
+          <Route path="/readmin" element={<Readmin />}></Route>
+          <Route path="/readmin/regional/enquiry" element={<Enquiry />}></Route>
+          <Route path="/readmin/regional/enquirylist" element={<Enquirylist />}></Route>
+          <Route path="/readmin/regional/cibilscore" element={<Cibilscore />}></Route>
+          <Route path="/readmin/regional/logout" element={<Logout />}></Route>
+          <Route path="/readmin/regional/delete/:userId" element={<Delete />}></Route>
+          <Route path="/readmin/regional/update/:userId" element={<Update />}></Route>
+
+          {/* cibild */}
+          
+          <Route path="/readmin/regional/cibild/:userId" element={<Cibild/>}></Route>
+
+          {/* Registration */}
+
+          <Route path="/readmin/regional/cibild/registration" element={<Registration/>}></Route>
 
 
+          
 
+
+          
 
           {/* OE */}
-          <Route path="/Oeadmin" element={<OeAdmin />}></Route>
-          <Route path="/Oeadmin/Operational" element={<Operational />}></Route>
-          <Route path="/Oeadmin/Oeenquirylist" element={<Oeenquirylist />}></Route>
-          <Route path="/Oeadmin/Logoutoe" element={<Logoutoe />}></Route>
-          <Route path="/Oeadmin/Cibile" element={<Cibile />}></Route>
-
+          <Route path="/oeadmin" element={<OeAdmin />}></Route>
+          <Route path="/oeadmin/Operational" element={<Operational />}></Route>
+          <Route path="/oeadmin/Oeenquirylist" element={<Oeenquirylist />}></Route>
+          <Route path="/oeadmin/Oelogout" element={<Oelogout />}></Route>
+          <Route path="/oeadmin/oecibil" element={<Oecibil/>}></Route>
 
           {/* CM */}
           <Route path="/cmadmin" element={<Cmadmin />}></Route>
-          <Route path="/cmadmin/cmenquirylist" element={<Cmenquirylist />}></Route>
-          <Route path="/cmadmin/logoutcm" element={<Logoutcm />}></Route>
-
-          {/* Registration */}
-          
-          <Route path="/readmin/registration" element={<Registration />}></Route>
-
-          {/* Uplodedocument */}
-
-          <Route path="/readmin/uplodedocument" element={<Uplodedocument />}></Route>
-          
-          
+          <Route path="/cmadmin/cmenquirylist" element={<Cmenquirylist />}/>
+          <Route path="/cmadmin/Cmlogout" element={<Cmlogout />}></Route>
 
         </Routes>
       </BrowserRouter>

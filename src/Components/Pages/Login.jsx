@@ -11,17 +11,17 @@ function Login() {
   const islogin = () => {
     if (name === "re" && pwd === "re") {
       alert("Login Successful")
-      navigate("/admin")
+      navigate("/readmin")
     }
     else if (name === "oe" && pwd === "oe") {
       alert("Login Successful")
-      navigate("/Oeadmin")
+      navigate("/oeadmin")
     }
     else if (name === "cm" && pwd === "cm") {
       alert(<div className="alert alert-success" role="alert">
         login successfully to admin pannal
       </div>)
-      navigate("/Cmadmin")
+      navigate("/cmadmin")
     }
     else if (name === "" && pwd === "") {
 

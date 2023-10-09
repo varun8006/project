@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Regional from '../REmodel/Regional'
+import './Re.css';
 import axios from 'axios';
 import { NavLink } from 'react-router-dom';
 import { GrDocumentUpdate } from "@react-icons/all-files/gr/GrDocumentUpdate";
@@ -32,7 +33,9 @@ const Enquirylist = () => {
                 <th scope="col">Date Of Birth </th>
                 <th scope="col">Aadhar Number </th>
                 <th scope="col">Pan Card Number</th>
-                <th scope="col"colspan="2">Action</th>
+                <th scope="col">Update</th>
+                <th scope="col">Delete</th>
+                
 
               </tr>
             </thead>
@@ -49,9 +52,9 @@ const Enquirylist = () => {
                       <td>{obj.uidnumber}</td>
                       <td>{obj.pannumber}</td>
 
-                      <td><NavLink to={`/admin/regional/update/${obj.id}`}><button type="button" className="primary1"><GrDocumentUpdate/></button></NavLink></td>
+                      <td><NavLink to={`/readmin/regional/update/${obj.id}`}><button type="button" className="secondary2"><GrDocumentUpdate/></button></NavLink></td>
                       
-                      <td><NavLink to={`/admin/regional/delete/${obj.id}`}><button type="button" className="secondary2"><AiOutlineDelete/></button></NavLink></td>
+                      <td><NavLink to={`/readmin/regional/delete/${obj.id}`}><button type="button" className="secondary2"><AiOutlineDelete/></button></NavLink></td>
                     </tr>
 
                   )

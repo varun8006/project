@@ -17,7 +17,7 @@ const Regional = () => {
       <div className="sidebar">
 
         <div className='heading text-center'>
-          <NavLink className="top" to="/admin"><h6>Regional Executive
+          <NavLink className="top" to="/readmin"><h6>Regional Executive
           </h6> </NavLink>
 
         </div>
@@ -25,7 +25,7 @@ const Regional = () => {
 
 
         <div className='d-inline'>
-          <NavLink className="admin" to="/admin/regional/enquiry">
+          <NavLink className="admin" to="/readmin/regional/enquiry">
             <div className='d-inline p-2' id='icon'>
               <FiFilePlus />
             </div>
@@ -34,7 +34,7 @@ const Regional = () => {
 
 
         <div className='d-inline'>
-          <NavLink className="admin" to="/admin/regional/enquirylist">
+          <NavLink className="admin" to="/readmin/regional/enquirylist">
             <div className='d-inline p-2' id='icon'>
               <FiFileText />
             </div>
@@ -43,7 +43,7 @@ const Regional = () => {
 
 
         <div className='d-inline'>
-          <NavLink className="admin" to="/admin/regional/cibilscore">
+          <NavLink className="admin" to="/readmin/regional/cibilscore">
             <div className='d-inline p-2' id='icon'>
               <FiAward />
             </div>
@@ -52,7 +52,7 @@ const Regional = () => {
 
 
         <div className='d-inline'>
-          <NavLink className="admin" to="/admin/regional/logout">
+          <NavLink className="admin" to="/readmin/regional/logout">
             <div className='d-inline p-2' id='icon'>
               <FiLogOut />
             </div>

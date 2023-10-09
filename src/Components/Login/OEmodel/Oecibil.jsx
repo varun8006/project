@@ -5,12 +5,12 @@ import axios from 'axios'
 import { useForm } from 'react-hook-form'
 
 
-const Cibile = () => {
+const Oecibil = () => {
   function savedata(data) {
     console.log(data);
 
-    axios.post("http://localhost:8080/cibile", data);
-    alert(" cibile data submit on RE model");
+    axios.post("http://localhost:8080/cibil",data);
+    alert(" cibil data submit on RE model");
 
   }
   const { register, handleSubmit } = useForm();
@@ -26,12 +26,12 @@ const Cibile = () => {
               <label for="id" className="col-sm-12 col-form-label">Enquiry Id</label>
               <input type="number" name='id' className="form-control" id="id" {...register("id")}/>
 
-              <label for="cibilescore" className="col-sm-12 col-form-label">Cibile Score</label>
-              <input type="number" name='cibilescore' className="form-control" id="cibilescore" {...register("cibilescore")}/>
+              <label for="cibilscore" className="col-sm-12 col-form-label">cibil Score</label>
+              <input type="number" name='cibilscore' className="form-control" id="cibilscore" {...register("cibilscore")}/>
 
               
-              <label for="cibilescoredate" className="col-sm-12 col-form-label">Cibile Score date</label>
-              <input type="text" name='cibilescoredate' className="form-control" id="cibilescoredate" {...register("cibilescoredate")} />
+              <label for="cibilscoredate" className="col-sm-12 col-form-label">cibil Score date</label>
+              <input type="text" name='cibilscoredate' className="form-control" id="cibilscoredate" {...register("cibilscoredate")} />
 
               <label htmlFor="status" className="col-sm-12 form-label" >Status</label>
               <select id="status" className="form-select"{...register("status")} >
@@ -60,4 +60,4 @@ const Cibile = () => {
   )
 }
 
-export default Cibile
+export default Oecibil

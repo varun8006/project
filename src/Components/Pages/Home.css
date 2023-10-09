@@ -184,7 +184,7 @@ li{
 
 #box1{
   padding: 0px;
-border : 5px solid #4198EE;
+border : 2px solid #4198EE;
 
 }
 
@@ -301,12 +301,12 @@ padding-right: 30px;
   text-decoration: none;
 }
 
-/* Style for the footer contact information */
+
 .footer-contact p {
   margin: 5px 0;
 }
 
-/* Style for the footer bottom section */
+
 .footer-bottom {
   color: white;
 

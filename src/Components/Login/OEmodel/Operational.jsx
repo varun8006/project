@@ -29,7 +29,7 @@ const Operational = () => {
             Enquiry List</NavLink>
         </div>
         <div className='d-inline'>
-          <NavLink className="admin" to="/Oeadmin/Logoutoe">
+          <NavLink className="admin" to="/oeadmin/oelogout">
             <div className='d-inline p-2' id='icon'>
               <FiLogOut />
             </div>
