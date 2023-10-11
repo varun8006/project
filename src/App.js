@@ -26,6 +26,11 @@ import Cibild from "./Components/Login/REmodel/Cibildelete/Cibild";
 //RE Registration
 import Registration from "./Components/Login/REmodel/Registration/Registration";
 
+//RE Registration delete
+
+import Regdelete from "./Components/Login/REmodel/Registration/Regdelete";
+
+
 
 
 
@@ -77,6 +82,10 @@ function App() {
           {/* Registration */}
 
           <Route path="/readmin/regional/cibild/registration" element={<Registration/>}></Route>
+          
+          {/* Registration delete */}
+          <Route path="/cmadmin/cmenquirylist/regdelete/:userId" element={<Regdelete/>}></Route>
+
 
 
           

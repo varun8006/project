@@ -169,6 +169,104 @@ app.delete("/cibil/delete/:id", (req, res) => {
 })
 
 
+/* Registration  */
+
+app.get("/registration", (req, res) => {
+  const q = "SELECT * FROM registration"
+
+  connection.query(q, (error, data) => {
+    if (error) {
+      console.log(error)
+      return res.status(500).send({ error: "error while fetching error" })
+    } return res.json(data)
+
+  })
+})
+
+
+app.post("/registration", (req, res) => {
+  const q = "insert into `project`.`registration` (`firstname`,`middlename`,`lastname`,`housenumber`,`buildingnumbername`,`areaname`,`city`,`zippostalcode`,`conutry`,`lhousenumber`,`lbuildingnumbername`,`lareaname`,`lcity`,`lzippostalcode`,`lconutry`,`loanamount`,`tenure`,`paidamount`,`loanstatus`,`remark`,`pandingloan`)values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"
+
+  const values = [
+
+    req.body.firstname,
+    req.body.middlename,
+    req.body.lastname,
+
+    req.body.housenumber,
+    req.body.buildingnumbername,
+    req.body.areaname,
+    req.body.city,
+    req.body.zippostalcode,
+    req.body.conutry,
+    
+    req.body.lhousenumber,
+    req.body.lbuildingnumbername,
+    req.body.lareaname,
+    req.body.lcity,
+    req.body.lzippostalcode,
+    req.body.lconutry,
+
+    req.body.loanamount,
+    req.body.tenure,
+    req.body.paidamount,
+    req.body.loanstatus,
+    req.body.remark,
+    req.body.pandingloan,
+   
+  ]
+  connection.query(q, values, (error, data) => {
+    if (error) {
+      console.log(error)
+      return res.status(500).send({ error: "error while fetching error" })
+    } return res.json(data)
+
+  })
+})
+
+
+app.get("/registration/:id", (req, res) => {
+  const userid = req.params.id;
+  const q = "SELECT * FROM registration where id= ?"
+
+  connection.query(q, [userid], (error, data) => {
+
+    if (error) {
+      console.log(error)
+      return res.status(500).send({ error: "fetch error" })
+    }
+    return res.json(data)
+
+  })
+})
+
+
+
+app.delete("/registration/delete/:id", (req, res) => {
+  const userid = req.params.id;
+  const q = "delete from registration WHERE id=?"
+
+  connection.query(q, [userid], (error, data) => {
+    if (error) {
+      console.log(error)
+      return res.status(500).send(error)
+    }
+    return res.json(data)
+
+  })
+})
+
+
+
+
+
+
+
+
+
+
+
+
 app.listen(8080, () => {
   console.log("running port on 8080")
 })
