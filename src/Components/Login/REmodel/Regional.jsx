@@ -6,6 +6,8 @@ import { FiFileText } from 'react-icons/fi';
 import { FiLogOut } from 'react-icons/fi';
 import { FiAward } from 'react-icons/fi';
 
+import "./Regional.css"
+
 
 
 

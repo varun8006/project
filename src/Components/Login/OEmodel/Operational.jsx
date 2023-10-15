@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Operational.css"
+
 import { NavLink } from 'react-router-dom'
 
 import { FiFileText } from 'react-icons/fi';
