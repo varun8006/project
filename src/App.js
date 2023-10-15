@@ -30,6 +30,10 @@ import Registration from "./Components/Login/REmodel/Registration/Registration";
 
 import Regdelete from "./Components/Login/REmodel/Registration/Regdelete";
 
+//RE Registration Uplode
+
+import Uplodedoc from "./Components/Login/REmodel/Uplodedoc/Uplodedoc";
+
 
 
 
@@ -49,6 +53,7 @@ import Oecibil from "./Components/Login/OEmodel/Oecibil";
 import Cmadmin from './Components/Login/CMmodel/CmAdmin'
 import Cmenquirylist from './Components/Login/CMmodel/Cmenquirylist'
 import Cmlogout from './Components/Login/CMmodel/Cmlogout'
+
 
 
 
@@ -85,6 +90,10 @@ function App() {
           
           {/* Registration delete */}
           <Route path="/cmadmin/cmenquirylist/regdelete/:userId" element={<Regdelete/>}></Route>
+
+          {/* Uplode file  */}
+
+          <Route path="/cmadmin/cmenquirylist/uplode" element={<Uplodedoc/>}></Route>
 
 
 

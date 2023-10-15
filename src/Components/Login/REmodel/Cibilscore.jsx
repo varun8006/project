@@ -54,7 +54,7 @@ const Cibilscore = () => {
 
            <td><NavLink to={`/readmin/regional/cibild/registration`}><button type="button" className="secondary2"><SiGoogleforms /></button></NavLink></td>
 
-           <td><NavLink to={`/readmin/uplodedocument`}><button type="button" className="secondary2"><GrDownload /></button></NavLink></td>
+           <td><NavLink to={`/cmadmin/cmenquirylist/uplode`}><button type="button" className="secondary2"><GrDownload /></button></NavLink></td>
 
            <td><NavLink to={`/readmin/regional/cibild/${obj.id}`}><button type="submit" className="secondary2"><AiOutlineDelete /></button></NavLink></td>
           </tr>
